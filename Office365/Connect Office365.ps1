@@ -454,13 +454,13 @@ function Connect-Office365{
 #Connect-Office365 -Service Teams, SkypeForBusiness, MSOnline #-MFA
 
 # MSOL commands only
-Connect-Office365 -Service MSOnline #-MFA
+# Connect-Office365 -Service MSOnline #-MFA
 
 # Mailbox commands only
 #Connect-Office365 -Service Exchange #-MFA
 
 # Connect the basics / BAU
-#Connect-Office365 -Service Exchange, AzureAD, MSOnline #-MFA
+Connect-Office365 -Service Exchange, AzureAD, MSOnline -MFA
 
 # New User Creation commands only
 #Connect-Office365 -Service Exchange, MSOnline -MFA
